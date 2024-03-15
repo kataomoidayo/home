@@ -1,0 +1,514 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Klee+One&family=Kosugi+Maru&display=swap'); */
+*,
+*::before,
+*::after {
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Klee One", cursive;
+    font-weight: 400;
+    font-style: normal;
+
+    margin: 0;
+    padding: 0;
+    /* background-color: #edf0f1; */
+
+    display: flex;
+    flex-direction: column;
+}
+
+header.navbar-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    z-index: 9999;
+}
+
+/* header.navbar-container .logo img {
+    width: 150px;
+} */
+
+header.navbar-container .nav-list ul {
+    /* padding-left: 0; */
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list li {
+    list-style-type: none;
+}
+
+header.navbar-container .nav-list li a {
+    padding: 0.5rem 1.5rem;
+    border-radius: 999px;
+
+    text-decoration: none;
+    font-size: 1.05rem;
+    /* font-weight: 400; */
+    color: black;
+
+    transition: all 0.5s ease-in-out;
+}
+
+header.navbar-container .nav-list li:hover a {
+    /* background-color: #92C7CF; */
+    background-color: #8ACDD7;
+
+    color: white;
+}
+
+main {
+    flex: 1;
+
+    width: 100%;
+    margin-inline: auto;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding: 2rem 4rem;
+
+    display: flex;
+    align-items: center;
+}
+
+main #home {
+    flex: 1;
+    display: flex;
+    align-items: center;
+
+    height: 100vh;
+}
+
+main #home .content-description {
+    flex: 1 1;
+}
+
+main #home .content-description .name {
+    margin-block: 1rem;
+    font-size: 3.5rem;
+}
+
+main #home .content-description p {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    text-align: justify;
+}
+
+main #home .content-image {
+    flex: 1;
+    display: flex;
+}
+
+main #home .content-image img {
+    width: 300px;
+    margin: auto;
+}
+
+main aside {
+    position: fixed;
+    inset-block: 0;
+    inset-inline-end: 0;
+}
+
+main aside .social-media {
+    height: 100%;
+    display: flex;
+}
+
+main aside .social-media ul {
+    padding: 1.5rem 1rem;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin: auto;
+    background-color: #8ACDD7;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+main aside .social-media li {
+    list-style-type: none;
+}
+
+main aside .social-media li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+
+    transition: all 0.5s ease-in-out;
+}
+
+main aside .social-media li a:hover {
+    color: #2d3e50;
+}
+
+
+
+
+/* ============== */
+
+main #profile {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+
+    height: 100vh;
+}
+
+main #profile .title {
+    margin-block: 1rem;
+    font-size: 3rem;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #8ACDD7;
+}
+
+main #profile .profile-data {
+    /* flex: 1 1; */
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem 10rem;
+}
+
+main #profile .profile-table {
+    text-align: justify;
+    padding-top: 10px;
+}
+
+main #profile .profile-certification {
+    flex: 1;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+}
+
+main #profile .profile-certification .content-container {
+    flex: 1;
+    display: flex;
+    gap: 1.5rem;
+}
+
+main #profile .profile-certification .content-container .certification-card {
+    display: flex;
+    height: 300px;
+    max-height: 450px;
+    width: 300px;
+    max-width: 450px;
+    background-color: #8ACDD7;
+    padding: 10px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+main #profile .profile-certification .content-container a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+
+    transition: all 0.5s ease-in-out;
+}
+
+main #profile .profile-certification .content-container a:hover {
+    color: #2d3e50;
+}
+
+main #profile .profile-certification .content-container img {
+    width: 150px;
+    margin: auto;
+}
+
+main #portfolio {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    height: 100vh;
+}
+
+main #portfolio .title {
+    margin-block: 1rem;
+    font-size: 3rem;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #8ACDD7;
+}
+
+main #portfolio .portfolio-android {
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+}
+
+main #portfolio .portfolio-android .content-container {
+    flex: 1;
+    display: flex;
+    gap: 1.5rem;
+}
+
+main #portfolio .portfolio-android .content-container .certification-card {
+    display: flex;
+    height: 500px;
+    width: 300px;
+    max-width: 450px;
+    background-color: #8ACDD7;
+    padding: 10px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+main #portfolio .portfolio-android .content-container a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+
+    transition: all 0.5s ease-in-out;
+}
+
+main #portfolio .portfolio-android .content-container a:hover {
+    color: #2d3e50;
+}
+
+main #portfolio .portfolio-android .content-container a img {
+    width: 150px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+main #portfolio .portfolio-android .content-container h3,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =================== */
+
+/* .portfolio-web {
+    background-color: #6d6e70;
+    color: #fff;
+} */
+
+/* @media only screen and (max-width: 1280px) */
+/* main #portfolio .portfolio-web .section-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 56px 0 64px;
+} */
+/* 
+.panel-heading {
+    text-align: center;
+    font-size: 3.2rem;
+    margin-bottom: 32px;
+} */
+
+/* .lyt-hover-a {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+} */
+
+/* .lyt-hover-a.div-col4 .hover-content:first-child {
+    -webkit-flex-basis: auto;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+} */
+
+/* .lyt-hover-a.div-col4 .hover-content {
+    -webkit-flex: 1 25%;
+    -ms-flex: 1 25%;
+    flex: 1 25%;
+    display: block;
+    width: 100%;
+    margin: 0;
+} */
+
+/* .lyt-hover-a .hover-content:first-child {
+    height: auto;
+    -webkit-flex-basis: auto;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+} */
+
+/* main #portfolio .portfolio-web .section-inner .lyt-panel-a .lyt-hover-a.div-col4 .hover-content:not(:first-child) {
+    max-width: 25%;
+} */
+main #portfolio .portfolio-web {
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+}
+
+main #portfolio .portfolio-web .content-container {
+    /* flex: 1 1; */
+    display: flex;
+    gap: 1.5rem;
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
+    /* flex-wrap: wrap; */
+}
+
+main #portfolio .portfolio-web .content-container .visual-content {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+
+main #portfolio .portfolio-web .content-container .visual-content a {
+    text-decoration: none;
+    background: rgba(0, 0, 0, .8);
+    position: absolute;
+    z-index: 2;
+    bottom: -100%;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0rem;
+    transition: bottom .3s, background .3s;
+    line-height: 1.5;
+}
+
+main #portfolio .portfolio-web .content-container .visual-content:hover a {
+    text-decoration: none;
+    background: #8acdd7e8;
+    bottom: 0;
+    opacity: 1;
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+
+main #portfolio .portfolio-web .content-container .visual-content .hover-heading {
+    /* font-weight: 400; */
+    /* text-align: center; */
+    color: #2d3e50;
+    margin-bottom: .8088em;
+    font-size: 2.5rem;
+}
+
+main #portfolio .portfolio-web .content-container .visual-content img {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+
+
+
+/* === */
+main #portfolio .portfolio-web .section-inner .lyt-panel-a .lyt-hover-a .hover-content .visual {
+    position: relative;
+    overflow: hidden;
+}
+
+main #portfolio .portfolio-web .section-inner .lyt-panel-a .lyt-hover-a .hover-content .visual a {
+    text-decoration: none;
+    background: rgba(0, 0, 0, .8);
+    position: absolute;
+    z-index: 2;
+    bottom: -83%;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: .55vw;
+    transition: bottom .3s, background .3s;
+    line-height: 1.5;
+}
+
+main #portfolio .portfolio-web .section-inner .lyt-panel-a .lyt-hover-a .hover-content .visual:hover a {
+    text-decoration: none;
+    background: rgba(216, 0, 132, .9);
+    bottom: 0;
+    opacity: 1;
+    border-radius: 10px;
+}
+
+/* main #portfolio .portfolio-web .section-inner .lyt-panel-a .lyt-hover-a .hover-content .visual .hover-hdg {
+    font-weight: 400;
+    text-align: center;
+    color: #fff;
+    margin-bottom: .8088em;
+    font-size: 2rem;
+    margin-bottom: 1.6rem;
+} */
+
+/* main #portfolio .portfolio-web .section-inner .lyt-panel-a .lyt-hover-a .hover-content .visual img {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+} */
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    /* header.navbar-container {
+        flex-direction: column;
+    } */
+
+    /* header.navbar-container .nav-list ul {
+        flex-wrap: wrap;
+        column-gap: 0.5rem;
+
+    } */
+
+    main {
+        padding: 1rem 3rem;
+    }
+
+    main #home {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    main #home .content-description .title {
+        font-size: 3rem;
+    }
+
+    main #home .content-description p {
+        font-size: 1rem;
+    }
+
+    main #home .content-image {
+        order: -1;
+    }
+
+    main #profile {
+        height: auto;
+    }
+
+    main #profile .profile-data {
+        flex-direction: column;
+    }
+
+    main #profile .profile-certification .content-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main #portfolio .portfolio-android .content-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
