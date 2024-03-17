@@ -31,20 +31,26 @@ header {
     align-items: center;
     z-index: 9999;
 
-    background-color: #8ACDD7;
+    background-color: white;
+    box-shadow: 0 0.5px #2d3e50;
+
 
     position: sticky;
     top: 0;
 }
 
 header .nav-bar {
+    width: 100%;
+    max-width: 1200px;
+
     display: flex;
     justify-content: space-around;
-    padding: 1rem 2rem;
-    background-color: #8ACDD7;
+    align-items: center;
+
+    z-index: 9999;
 }
 
-header .nav-bar .logo img {
+header .nav-bar img {
     width: 150px;
 }
 
@@ -60,7 +66,7 @@ header .nav-bar .menu-bar .bar {
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: #8ACDD7;
+    background-color: #2d3e50;
 }
 
 header .nav-bar ul {
@@ -75,7 +81,7 @@ header .nav-bar li {
     list-style-type: none;
 }
 
-header .nav-bar ul.nav-menu li a {
+header .nav-bar .nav-menu li a {
     padding: 0.5rem 1.5rem;
     border-radius: 999px;
 
@@ -87,7 +93,7 @@ header .nav-bar ul.nav-menu li a {
     transition: all 0.5s ease-in-out;
 }
 
-header .nav-bar ul.nav-menu li:hover a {
+header .nav-bar .nav-menu li:hover a {
     background-color: #8ACDD7;
     color: white;
 }
@@ -137,6 +143,16 @@ main #home .content-image img {
     width: 300px;
     min-width: 250px;
     margin: auto;
+
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+
+main #home .content-image img:hover {
+    width: 500px;
+    position: absolute;
+    align-self: center;
 }
 
 main #profile {
@@ -145,14 +161,6 @@ main #profile {
     flex-direction: column;
 
     height: 100vh;
-}
-
-main #profile .title {
-    margin-block: 1rem;
-    font-size: 3rem;
-    text-align: center;
-    text-decoration: underline;
-    text-decoration-color: #8ACDD7;
 }
 
 main #profile .profile-data {
@@ -192,108 +200,19 @@ main #profile .profile-certification {
     flex-direction: column;
 }
 
-main #profile .profile-certification .content-container {
-    flex: 1;
-    display: flex;
-    gap: 1.5rem;
-}
+/* ==================== */
 
-main #profile .profile-certification .content-container .certification-card {
-    display: flex;
-    height: 300px;
-    max-height: 450px;
-    width: 300px;
-    max-width: 450px;
-    background-color: #8ACDD7;
-    padding: 10px;
-    border-radius: 10px;
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
-}
-
-main #profile .profile-certification .content-container a {
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    font-size: 1.2rem;
-
-    transition: all 0.5s ease-in-out;
-}
-
-main #profile .profile-certification .content-container a:hover {
-    color: #2d3e50;
-}
-
-main #profile .profile-certification .content-container img {
-    width: 150px;
-    margin: auto;
-}
 
 main #portfolio {
     flex: 1;
     display: flex;
     flex-direction: column;
+    gap: 4rem;
 }
 
-main #portfolio .title {
-    margin-block: 1rem;
-    font-size: 3rem;
-    text-align: center;
-    text-decoration: underline;
-    text-decoration-color: #8ACDD7;
-}
 
-main #portfolio .portfolio-container {
-    flex: 1 1;
-    display: flex;
-    flex-direction: column;
-}
 
-main #portfolio .content-container {
-    flex: 1;
-    display: flex;
-    gap: 1.5rem;
-}
-
-main #portfolio .item-card {
-    display: flex;
-    height: 500px;
-    width: 300px;
-    max-width: 450px;
-    background-color: #8ACDD7;
-    padding: 10px;
-    border-radius: 10px;
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
-}
-
-main #portfolio .content-container a {
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    font-size: 1.2rem;
-
-    transition: all 0.5s ease-in-out;
-}
-
-main #portfolio .content-container a:hover {
-    color: #2d3e50;
-}
-
-main #portfolio .content-container a img {
-    width: 150px;
-    border-radius: 10px;
-    margin: 10px;
-}
-
-main #portfolio .content-container h3,
-p {
-    margin: 0;
-    padding: 0;
-}
-
+/* ================= */
 
 main #portfolio .portfolio-web {
     flex: 1 1;
@@ -355,96 +274,18 @@ main #portfolio .portfolio-web .visual-container .visual-content img {
     border-radius: 10px;
 }
 
-main #portfolio .portfolio-back-end {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-main #portfolio .portfolio-back-end .content-container {
-    flex: 1;
-    display: flex;
-    gap: 1.5rem;
-}
-
-main #portfolio .portfolio-back-end .content-container .back-end-card {
-    display: flex;
-    height: 300px;
-    max-height: 450px;
-    width: 300px;
-    max-width: 450px;
-    background-color: #8ACDD7;
-    padding: 10px;
-    border-radius: 10px;
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
-}
-
-main #portfolio .portfolio-back-end .content-container a {
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    font-size: 1.2rem;
-
-    transition: all 0.5s ease-in-out;
-}
-
-main #portfolio .portfolio-back-end .content-container a:hover {
-    color: #2d3e50;
-}
-
-main #portfolio .portfolio-back-end .content-container img {
-    width: 150px;
-    margin: auto;
-}
-
-main #portfolio .portfolio-back-end .content-container p {
-    font-size: 2rem;
-}
-
 main #contact {
     flex: 1;
     display: flex;
     flex-direction: column;
 
     height: 100vh;
+    margin-top: 25px;
 }
 
-main #contact .title {
-    margin-block: 1rem;
-    font-size: 2.5rem;
-    text-align: center;
-    text-decoration: underline;
-    text-decoration-color: #8ACDD7;
-}
-
-main #contact .content-container {
-    flex: 1;
-    display: flex;
-    gap: 1.5rem;
-}
-
-main #contact .content-container .contact-card {
-    display: flex;
-    height: 150px;
-    width: 300px;
-    background-color: #8ACDD7;
-    padding: 10px;
-    border-radius: 10px;
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
-}
-
-main #contact .content-container .contact-card .contact-icon {
+main #contact .content-container .horizontal-rectangle-card .contact-icon {
     padding: 1rem;
     align-items: center;
-}
-
-main #contact .content-container .contact-card p {
-    font-size: 1.05rem;
-    color: white;
 }
 
 main aside {
@@ -488,6 +329,123 @@ main aside .social-media li a:hover {
     color: #2d3e50;
 }
 
+main .title {
+    margin-block: 1rem;
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #8ACDD7;
+}
+
+main .content-container {
+    flex: 1;
+    display: flex;
+    gap: 1.5rem;
+}
+
+main .content-container .square-card {
+    text-align: center;
+    text-decoration: none;
+    color: #2d3e50;
+    font-size: 1.2rem;
+
+    display: flex;
+    height: 300px;
+    width: 300px;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 #2d3e50;
+
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+        box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+        top: -4px;
+        border: 1px solid #cccccc;
+        background-color: white;
+    }
+}
+
+main .vertical-rectangle-card {
+    text-align: center;
+    text-decoration: none;
+    color: #2d3e50;
+    font-size: 1.2rem;
+
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 #2d3e50;
+
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+        box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+        top: -4px;
+        border: 1px solid #cccccc;
+        background-color: white;
+    }
+}
+
+main .horizontal-rectangle-card {
+    text-align: center;
+    text-decoration: none;
+    color: #2d3e50;
+    font-size: 1.2rem;
+
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 #2d3e50;
+
+    transition: all 0.5s ease-in-out;
+
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+        top: -4px;
+        border: 1px solid #cccccc;
+        background-color: white;
+    }
+}
+
+main .content-container img {
+    width: 150px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+main .content-container h3,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    font-weight: 500px;
+    box-shadow: 0 0 0 0.5px #2d3e50;
+}
+
 @media screen and (max-width: 768px) {
 
     header .nav-bar {
@@ -527,39 +485,40 @@ main aside .social-media li a:hover {
         padding: 1rem 3rem;
     }
 
+    main .content-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
     main #home {
         flex-direction: column;
         gap: 2rem;
     }
 
-    main #home .content-description .title {
-        font-size: 3rem;
+    main #home .content-description .name {
+        font-size: 2rem;
     }
 
     main #home .content-description p {
         font-size: 1rem;
     }
 
+
     main #home .content-image {
         order: -1;
     }
 
+    main #home .content-image img {
+        pointer-events: none;
+    }
+
     main #profile {
         height: auto;
+        margin-bottom: 25px;
     }
 
     main #profile .profile-data {
         flex-direction: column;
-    }
-
-    main #profile .profile-certification .content-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    main #portfolio .content-container {
-        flex-direction: column;
-        align-items: center;
     }
 
     main #portfolio .portfolio-web .visual-container .visual-content a {
@@ -576,11 +535,6 @@ main aside .social-media li a:hover {
 
     main #portfolio .portfolio-web .visual-container .visual-content img {
         width: 90%;
-    }
-
-    main #contact .content-container {
-        flex-direction: column;
-        align-items: center;
     }
 
 }
