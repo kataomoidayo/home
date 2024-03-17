@@ -18,7 +18,6 @@ body {
 
     display: flex;
     flex-direction: column;
-    /* background-color: rgb(15, 23, 42); */
 }
 
 header {
@@ -94,8 +93,7 @@ header .nav-bar .nav-menu li a {
 }
 
 header .nav-bar .nav-menu li:hover a {
-    background-color: #8ACDD7;
-    color: white;
+    color: #8ACDD7;
 }
 
 main {
@@ -200,19 +198,12 @@ main #profile .profile-certification {
     flex-direction: column;
 }
 
-/* ==================== */
-
-
 main #portfolio {
     flex: 1;
     display: flex;
     flex-direction: column;
     gap: 4rem;
 }
-
-
-
-/* ================= */
 
 main #portfolio .portfolio-web {
     flex: 1 1;
@@ -230,7 +221,6 @@ main #portfolio .portfolio-web .visual-container .visual-content {
     overflow: hidden;
     height: 100%;
 }
-
 
 main #portfolio .portfolio-web .visual-container .visual-content a {
     text-decoration: none;
@@ -304,7 +294,9 @@ main aside .social-media ul {
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
     margin: auto;
-    background-color: #8ACDD7;
+    background-color: white;
+    border: solid #2d3e50;
+    border-width: 1px;
 
     display: flex;
     flex-flow: column nowrap;
@@ -320,13 +312,13 @@ main aside .social-media li {
 main aside .social-media li a {
     text-decoration: none;
     font-size: 1.5rem;
-    color: white;
+    color: #2d3e50;
 
     transition: all 0.5s ease-in-out;
 }
 
 main aside .social-media li a:hover {
-    color: #2d3e50;
+    color: #8ACDD7;
 }
 
 main .title {
@@ -418,13 +410,6 @@ main .horizontal-rectangle-card {
     transition: all 0.5s ease-in-out;
 
     cursor: pointer;
-
-    &:hover {
-        box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
-        top: -4px;
-        border: 1px solid #cccccc;
-        background-color: white;
-    }
 }
 
 main .content-container img {
@@ -447,7 +432,6 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-
     header .nav-bar {
         align-items: flex-start;
         flex-wrap: wrap;
@@ -503,7 +487,6 @@ footer {
         font-size: 1rem;
     }
 
-
     main #home .content-image {
         order: -1;
     }
@@ -536,5 +519,4 @@ footer {
     main #portfolio .portfolio-web .visual-container .visual-content img {
         width: 90%;
     }
-
 }
