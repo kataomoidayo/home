@@ -409,7 +409,6 @@ main .horizontal-rectangle-card {
 
     transition: all 0.5s ease-in-out;
 
-    cursor: pointer;
 }
 
 main .content-container img {
